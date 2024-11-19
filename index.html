@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYDAH CLUBS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PYDAH CLUBS</h1>
+    </header>
+
+    <div class="container">
+        <p class="pa1">AFTER PAYMENT IS DONE, PLEASE WAIT. THE PAGE WILL REDIRECT TO THE GOOGLE FORM. KINDLY FILL IT IN.</p>
+        
+        <!-- Loading animation -->
+        <div id="loading">
+            <div class="spinner"></div>
+            <p class="lod1">Loading Payment Form please wait...</p>
+        </div>
+
+        <!-- Payment gateway iframe -->
+        <iframe 
+            src="https://rzp.io/rzp/U1IXihyW" 
+            frameborder="0" 
+            allowfullscreen 
+            onload="hideLoadingAnimation()"></iframe>
+        
+        <p class="pa2">FILL THE ABOVE FORM AND PAY THE AMOUNT TO REGISTER FOR PYDAH CLUBS</p>
+    </div>
+
+    <footer class="fot1">
+        &copy; 2024 PYDAH CLUBS. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript to hide the loading animation once the iframe loads
+        function hideLoadingAnimation() {
+            document.getElementById('loading').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
